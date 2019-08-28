@@ -7,7 +7,7 @@
     "postinstall": "npm run webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node server/server.js",
-    "start": "node server/server.js",
+    "start": "npm run webpack & node server/server.js",
     "webpack": "webpack"
   },
   "keywords": [],
