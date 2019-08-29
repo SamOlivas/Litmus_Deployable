@@ -1,13 +1,21 @@
 const toxicity = require('@tensorflow-models/toxicity');
-//From r/therewasanattempt/ - TOTAL HIT COUNT: 12
-const {attemptData} = require('./sandbox')
-//From r/metacanada - TOTAL HIT COUNT: 11
-const {metaCanadaData} = require('./sandbox')
-//From r/ImGoingToHellForThis/ - TOTAL HIT COUNT: >13
-const {goingToHellData} = require('./sandbox')
+const {attemptData, metaCanadaData, goingToHellData, dankMemesData, wholesomeMemeData, eyeBleachData, classicWowData} = require('./sandbox')
+
+//RANDOM SUBREDDITS
+// r/therewasanattempt/ - TOTAL HIT COUNT: 12
+// r/classicWow/ - TOTAL HIT COUNT: 8
+
+//KNOWN TOXIC
+// r/metacanada/ - TOTAL HIT COUNT: 11
+// r/ImGoingToHellForThis/ - TOTAL HIT COUNT: >13, tensor errored out
+// r/DankMemes/ - TOTAL HIT COUNT: 15
+
+// KNOWN WHOLESOME
+// r/wholesomememes/ - TOTAL HIT COUNT: 4
+// r/Eyebleach/ - TOTAL HIT COUNT: 1
 
 //Data to pass to Tensor model, takes frist 20 for time reasons, need to improve proformance latter, C++ tie-in
-let inputData = goingToHellData
+let inputData = classicWowData
 let toxicityCount = 0
 
 const threshold = 0.9;

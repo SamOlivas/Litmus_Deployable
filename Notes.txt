@@ -1,0 +1,10 @@
+Noting some false positives, general toxicity seems to include any swearing regardless of target
+
+'My brothers lab's tail was almost that long but thicker because it never stopped wagging except when he was chilling out on the floor. Damn thing could clear a coffee table like nobody's business and getting hit with it felt like a tree branch lol. Man i miss that asshole'
+{ label: 'toxicity',
+  results: [ { probabilities: [Float32Array], match: true } ] }
+
+
+'I feel you, I'm level 10 with 4s. Though my dumb ass bought daggers with out looking at the cost...'
+{ label: 'toxicity',
+  results: [ { probabilities: [Float32Array], match: true } ] }

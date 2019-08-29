@@ -56,7 +56,7 @@ const commentsFromSubredit = async(subredditURL) => {
   )
   return await allComments;
 };
-commentsFromSubredit('https://www.reddit.com/r/dankmemes/')
+commentsFromSubredit('https://www.reddit.com/r/classicwow/')
 
 
 module.exports = commentsFromSubredit
