@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@tensorflow-models/toxicity": "^1.1.1",
